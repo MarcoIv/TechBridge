@@ -1,0 +1,129 @@
+@import url("base.css");
+
+/* THEME 1 - LIGHT MODE */
+
+:root {
+  --bg: #f5f5f5;
+  --text: #333;
+  --border: #ccc;
+  --border-light: #e6e6e6;
+  --hover: rgba(0, 0, 0, 0.03);
+
+  --card-bg: #ffffff;
+  --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  --nav-bg: #ffffff;
+  --nav-text: #333;
+
+  --btn-primary-bg: #0077cc;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #005fa3;
+
+  --btn-secondary-bg: #eeeeee;
+  --btn-secondary-text: #333333;
+  --btn-secondary-hover: #dddddd;
+
+  --link-color: #0077cc;
+
+  --badge-active: #2e9d4d;
+  --badge-inactive: #b33a3a;
+  --badge-pending: #d4a017;
+
+  --badge-admin: #0077cc;
+  --badge-user: #371251;
+
+  --status-online: #2e9d4d;
+  --status-offline: #b33a3a;
+
+  --btn-danger-bg: #b33a3a;
+  --btn-danger-text: #ffffff;
+  --btn-danger-hover: #8e2d2d;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+nav {
+  background: var(--nav-bg);
+  color: var(--nav-text);
+}
+
+a {
+  color: var(--link-color);
+}
+
+button,
+input[type="submit"],
+.admin-btn,
+.request-btn {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+.request-btn-danger {
+  background: var(--btn-danger-bg) !important;
+  color: var(--btn-danger-text) !important;
+}
+
+.request-btn-danger:hover {
+  background: var(--btn-danger-hover) !important;
+}
+
+button:hover,
+.primary-btn:hover,
+.admin-btn:hover,
+.request-btn:hover {
+  background: var(--btn-primary-hover);
+}
+.admin-btn-secondary {
+  background: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+}
+
+.admin-btn-secondary:hover {
+  background: var(--btn-secondary-hover);
+}
+
+/* Badges */
+.status-active {
+  background: var(--badge-active);
+}
+.status-inactive {
+  background: var(--badge-inactive);
+}
+.status-pending {
+  background: var(--badge-pending);
+}
+
+.role-admin {
+  background: var(--badge-admin);
+}
+.role-user {
+  background: var(--badge-user);
+}
+
+.status-online {
+  color: var(--status-online);
+}
+.status-offline {
+  color: var(--status-offline);
+}
+
+.status-open,
+.status-pending {
+  background: #d4a017;
+}
+
+.status-answered {
+  background: #2e9d4d;
+}
+
+.status-inprogress {
+  background: #0077cc;
+}
+
+.status-closed {
+  background: #555555;
+}
